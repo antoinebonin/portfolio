@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Enum\PageStatutEnum;
+use App\Models\Page;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -16,8 +18,16 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Antoine',
+            'email' => 'bonin.antoine@proton.me',
+        ]);
+
+        Page::create([
+            'title' => "Accueil",
+            'url' => '',
+            'description' => "Page d'accueil",
+            'blocs' => [],
+            'statut' => PageStatutEnum::PUBLISH
         ]);
     }
 }

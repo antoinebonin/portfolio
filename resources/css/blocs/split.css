@@ -1,0 +1,27 @@
+.split {
+    display: flex;
+    gap: var(--spacing);
+}
+
+.split.inverse {
+    flex-direction: row-reverse;
+}
+
+.split > * {
+    width: 50%;
+}
+
+.split hr {
+    border-bottom: 5px solid var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+@media screen and (max-width: 760px){
+    .split {
+        display: flex;
+        flex-direction: column;
+    }
+    .split > * {
+        width: 100%;
+    }
+}

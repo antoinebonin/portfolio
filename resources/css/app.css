@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('blocs/split.css');
+@import url('blocs/hero.css');
+@import url('blocs/navbar.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --primary-color: #00F5D4;
+
+    --spacing-sm: 4px;
+    --spacing-md: 8px;
+    --spacing: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+
+    background-color: #202020;
+    color: white;
+
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#wrapper {
+    max-width: 1440px;
+    margin: 0 var(--spacing-xl);
+}

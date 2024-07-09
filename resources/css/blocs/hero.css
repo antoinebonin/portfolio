@@ -1,0 +1,49 @@
+.hero {
+    margin: var(--spacing-xl) 0;
+    display: flex;
+    gap: var(--spacing);
+}
+
+.hero > * {
+    width: 50%;
+}
+
+.hero .img {
+    display: flex;
+    justify-content: center;
+    padding: clamp( var(--spacing-xl), 50vw, calc(var(--spacing-xl) * 2));
+}
+
+.hero .img img{
+    align-self: center;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.hero .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .left .title{
+    font-size: 46px;
+    font-weight: bold;
+}
+.hero .left .subtitle{
+    font-size: 46px;
+    color: var(--primary-color);
+}
+
+.hero .left .intro {
+    margin-top: var(--spacing-xl);
+}
+
+@media screen and (max-width: 760px){
+    .hero > * {
+        width: 100%;
+    }
+    .hero .img {
+        display: none;
+    }
+}

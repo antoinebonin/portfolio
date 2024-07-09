@@ -1,0 +1,67 @@
+nav {
+    margin: 0 calc(var(--spacing-xl) * 4);
+    overflow: hidden;
+    line-height: var(--spacing-xl);
+}
+
+nav a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a.profil {
+    float: left;
+    font-weight: bolder;
+}
+
+nav a.profil span {
+    color: var(--primary-color);
+}
+
+nav .dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+nav .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+nav .dropdown .dropbtn svg {
+    height: var(--spacing);
+    transform: translateY(2px);
+    margin-right: var(--spacing-sm);
+}
+
+nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(var(--spacing-xl) * 2);
+    background-color: var(--primary-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav .dropdown .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
